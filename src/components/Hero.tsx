@@ -5,11 +5,15 @@ import user2 from '../../public/users/user-2.png'
 import user3 from '../../public/users/user-3.png'
 import user4 from '../../public/users/user-4.jpg'
 import user5 from '../../public/users/user-5.jpg'
+import yourImg from '../../public/assets/your-image.png'
+import line from '../../public/assets/line.png'
+import test1 from '../../public/testimonials/1.jpg'
 import Image from 'next/image'
+import Phone from './Phone'
 const Hero = () =>{
     return (
         <section>
-            <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
+          <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 -top-20 left-0 lg:block hidden">
                 <Image src={snake1} alt="snake image" width={100} height={100}/>
@@ -51,16 +55,17 @@ const Hero = () =>{
                     <Star className='h-4 w-4 text-green-600 fill-green-600'/>
                     <Star className='h-4 w-4 text-green-600 fill-green-600'/>
                   </div>
-
                   <p><span className='font-semibold'>1,250</span>{' '}happy customers</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className='col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-3  lg:mx-0 lg:mt-20 h-fit'>
+          <div className='col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit'>
             <div className='relative md:max-w-xl'>
-              <Image src='/users/user-5.jpg' width={20} height={20} alt='my image' className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'/>
+              <Image src={yourImg} alt='my image' className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'/>
+              <Image src={line} alt='line image' className='absolute w-20 -left-6 -bottom-6 select-none'/>
+              <Phone className='w-64' imgSrc='/testimonials/1.jpg' style={{width: '20px'}}/>
             </div>
           </div>
         </section>
