@@ -9,7 +9,7 @@ const Phone = ({imgSrc, className, dark=false, ...props}: PhoneProps) =>{
         <div className={cn('relative pointer-events-none z-50 overflow-hidden', className)} {...props}>
             <Image src={dark? darkTemplate : lightTemplate} alt="phone-template image" className="pointer-events-none z-50 select-none"/>
             <div className="absolute -z-10 inset-0">
-                <Image src={imgSrc} className="object-cover" alt="uploaded image"/>
+                <Image src={imgSrc} className="object-cover w-full" alt="uploaded image" width={60} height={60}/>
             </div>
         </div>
     )

@@ -7,12 +7,11 @@ import user4 from '../../public/users/user-4.jpg'
 import user5 from '../../public/users/user-5.jpg'
 import yourImg from '../../public/assets/your-image.png'
 import line from '../../public/assets/line.png'
-import test1 from '../../public/testimonials/1.jpg'
 import Image from 'next/image'
 import Phone from './Phone'
 const Hero = () =>{
     return (
-        <section>
+        <section className='lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 lg:py-20'>
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 -top-20 left-0 lg:block hidden">
