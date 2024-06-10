@@ -9,6 +9,7 @@ import yourImg from '../../public/assets/your-image.png'
 import line from '../../public/assets/line.png'
 import Image from 'next/image'
 import Phone from './Phone'
+import FiveStars from './FiveStars'
 const Hero = () =>{
     return (
         <section className='lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 lg:py-20'>
@@ -48,11 +49,7 @@ const Hero = () =>{
 
                 <div className='flex flex-col justify-between items-center sm:items-start'>
                   <div className='flex gap-0.5'>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600'/>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600'/>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600'/>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600'/>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600'/>
+                    <FiveStars className='w-4 h-4'/>
                   </div>
                   <p><span className='font-semibold'>1,250</span>{' '}happy customers</p>
                 </div>
