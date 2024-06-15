@@ -12,14 +12,14 @@ import Phone from './Phone'
 import FiveStars from './FiveStars'
 const Hero = () =>{
     return (
-        <section className='lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 lg:py-20'>
+        <section className='hero-container'>
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
-              <div className="absolute w-28 -top-20 left-0 lg:block hidden">
+              <div className="hero-img-container">
                 <Image src={snake1} alt="snake image" width={100} height={100}/>
               </div>
-              <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-5xl text-gray-900 md:text-6xl lg:text-7xl">Your Image on a <span className=" bg-green-600 text-white px-2">Custom</span>{' '}Phone Case</h1>
-              <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left md:text-wrap text-balance">Capture your favorite memories with your own, {' '} <span className="font-semibold">one-of-one</span>{' '}phone case. CaseCobra allows you to protect your memories, not just your phone case.</p>
+              <h1 className="hero-header">Your Image on a <span className=" bg-green-600 text-white px-2">Custom</span>{' '}Phone Case</h1>
+              <p className="hero-text">Capture your favorite memories with your own, {' '} nbsp <span className="font-semibold">one-of-one</span>{' '}phone case. CaseCobra allows you to protect your memories, not just your phone case.</p>
 
               <ul className="flex flex-col items-center space-y-2 text-left font-medium mt-8 sm:items-start">
                 <div className="space-y-2">

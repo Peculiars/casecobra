@@ -59,3 +59,18 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @layer utilities{
+    .hero-container{
+      @apply lg:grid lg:grid-cols-3 lg:gap-x-0 xl:gap-x-8 lg:py-20;
+    }
+    .hero-img-container{
+      @apply absolute w-28 -top-20 left-0 lg:block hidden;
+    }
+    .hero-header{
+      @apply relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-5xl text-gray-900 md:text-6xl lg:text-7xl;
+    }
+    .hero-text{
+      @apply mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left md:text-wrap text-balance;
+    }
+  }
